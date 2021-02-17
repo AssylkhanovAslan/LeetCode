@@ -15,11 +15,9 @@ public class ThreeSumClosest {
             int end = nums.length - 1;
 
             while (mid < end) {
-                System.out.println(nums[start] + " " + nums[mid] + " " + nums[end] + " ");
                 int currSum = nums[start] + nums[mid] + nums[end];
                 int currDiff = target - currSum;
                 if (currDiff == 0) {
-                    System.out.println("Return");
                     return currSum;
                 }
 
@@ -39,4 +37,5 @@ public class ThreeSumClosest {
 
         return result;
     }
+
 }
