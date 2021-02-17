@@ -1,12 +1,17 @@
-import java.util.Arrays;
-import java.util.List;
+import helpers.ListNode;
 
 public class Main {
 
     public static void main(String[] args) {
-        String digits = "23";
-        List<String> output = LetterCombinationsOfPhoneNumber.letterCombinations(digits);
-        System.out.println(output);
+        ListNode head = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+        ListNode fourth = new ListNode(4);
+        head.next = second;
+        second.next = third;
+        third.next = fourth;
+        ListNode result = RemoveNthNodeFromEndofList.removeNthFromEnd(head, 4);
+        System.out.println(result);
 
     }
 
