@@ -10,7 +10,7 @@ public class Main {
         head.next = second;
         second.next = third;
         third.next = fourth;
-        ListNode result = RemoveNthNodeFromEndofList.removeNthFromEnd(head, 4);
+        ListNode result = RemoveNthNodeFromEndofList.removeNthFromEndSingleFollowUp(head, 4);
         System.out.println(result);
 
     }
