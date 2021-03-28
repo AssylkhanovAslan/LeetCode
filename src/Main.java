@@ -7,12 +7,17 @@ public class Main {
         ListNode second = new ListNode(2);
         ListNode third = new ListNode(3);
         ListNode fourth = new ListNode(4);
+        ListNode fifth = new ListNode(5);
+        ListNode sixth = new ListNode(6);
         head.next = second;
         second.next = third;
         third.next = fourth;
-        ListNode result = RemoveNthNodeFromEndofList.removeNthFromEndSingleFollowUp(head, 4);
-        System.out.println(result);
+        fourth.next = fifth;
+        fifth.next = sixth;
 
+        ListNode result = SwapNodesInPairs.simpleSolution(head);
+
+        System.out.println(result);
     }
 
     public static void println(Object o) {
